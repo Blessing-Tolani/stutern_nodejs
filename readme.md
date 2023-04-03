@@ -33,9 +33,9 @@ To run a script that you have added to your package.json file, simply run $ npm 
 
 ## Initialize a package if your choice, give it a name and install the following npm packages to it, express, mongoose, joi.
 
-$ npm init
-$ npm install express
-$ npm install mongoose
+$ npm init <br>
+$ npm install express <br>
+$ npm install mongoose <br>
 $ npm install joi
 
 ## Define Monolithic architecture
