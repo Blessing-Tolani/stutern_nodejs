@@ -1,23 +1,23 @@
 ## Using express generator and generate an express app, Give it a name of Nodejs Tutorial app
 
-sudo npm install express-generator -g
-express Nodejs_Tutorial_app
-cd Nodejs_Tutorial_app
+sudo npm install express-generator -g <br>
+express Nodejs_Tutorial_app <br>
+cd Nodejs_Tutorial_app <br>
 npm install
 
-const express = require('express');
+const express = require('express'); <br>
 const bodyParser = require('body-parser');
 
-const app = express();
-app.use(bodyParser.json());
+const app = express(); <br>
+app.use(bodyParser.json()); <br>
 const port = 8000;
 
 app.post('/user', function (req, res) {
-let user = req.body;
+let user = req.body; <br>
 res.status(200).json({
 message: 'User successfully created',
 user,
-});
+}); <br>
 });
 
 app.listen(port);
