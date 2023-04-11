@@ -4,7 +4,8 @@
   "description": "The event loop is the loop that runs call back functions on FIFO(First In First Out) idealogy. When Node is initialized, it excutes the call back functions first, import the modules and register the callback to the event loop. The event loop exist to process asynchronous tasks, It allows Node.js to perform non-blocking I/O operations despite the fact that JavaScript is single-threaded, it allows us to use callbacks and promises.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint **/*.{js,jsx} --quiet"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,9 @@
     "express": "^4.18.2",
     "joi": "^17.9.1",
     "mongoose": "^7.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.38.0",
+    "prettier": "^2.8.7"
   }
 }
